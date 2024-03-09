@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1034405552611",
+    "project_id": "messenger-firebase-1733c",
+    "storage_bucket": "messenger-firebase-1733c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1034405552611:android:11301ec9d5d3ec147600d6",
+        "android_client_info": {
+          "package_name": "com.bignerdranch.android.messengerfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL7HKJAbNg0MWuEPIxbTALCkMqneO0Q34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
