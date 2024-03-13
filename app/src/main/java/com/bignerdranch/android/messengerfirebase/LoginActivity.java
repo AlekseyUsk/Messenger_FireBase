@@ -1,5 +1,6 @@
 package com.bignerdranch.android.messengerfirebase;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +14,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPassword;
     private TextView textViewForgotPassword;
-    private TextView textViewForgotRegister;
+    private TextView textViewRegister;
     private Button btnLogin;
 
     @Override
@@ -29,8 +30,8 @@ public class LoginActivity extends AppCompatActivity {
     private void initViews() {
         editTextEmail = findViewById(R.id.editTextEmail);
         editTextPassword = findViewById(R.id.editTextPassword);
-        textViewForgotPassword = findViewById(R.id.textViewForgotRegister);
-        textViewForgotRegister = findViewById(R.id.textViewForgotRegister);
+        textViewForgotPassword = findViewById(R.id.textViewForgotPassword);
+        textViewRegister = findViewById(R.id.textViewRegister);
         btnLogin = findViewById(R.id.btnLogin);
     }
 
@@ -48,13 +49,14 @@ public class LoginActivity extends AppCompatActivity {
         textViewForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //launch intent to forgot password screen
+
             }
         });
-        textViewForgotRegister.setOnClickListener(new View.OnClickListener() {
+        textViewRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //launch intent to register screen
+                Intent intent = RegistrationActivity.newIntent(LoginActivity.this);
+                startActivity(intent);
             }
         });
     }
